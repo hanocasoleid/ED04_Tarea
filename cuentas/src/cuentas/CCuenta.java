@@ -2,12 +2,11 @@
 
 package cuentas;
 
-/**Clase CCuenta
- * 
- * Representa una cuenta de un determinado usuario.
+/**
+ * Representa la cuenta de un determinado usuario.
  * 
  * @author 		Cidead
- * @version 	1.0
+ * @version 	1.5
  * 
  */
 public class CCuenta {
@@ -49,7 +48,7 @@ public class CCuenta {
         setSaldo(sal);
     }
     /**
-     * Devuelve un valor que representa el saldo actual de la cuenta.
+     * Devuelve el saldo actual de la cuenta.
      * @return	Saldo actual de la cuenta.
      */
     public double estado()
@@ -58,7 +57,7 @@ public class CCuenta {
     }
     
     /**
-     * Realiza un ingreso, es decir, agrega una determinada cantidad al valor actual del saldo.
+     * Realiza un ingreso, es decir, agrega una cantidad al valor actual del saldo.
      * @param cantidad		Cantidad a ingresar en la cuenta.
      * @throws Exception	Si se intenta ingresar una cantidad negativa.
      */
@@ -69,7 +68,7 @@ public class CCuenta {
         setSaldo(getSaldo() + cantidad);
     }
     /**
-     * Realiza una retirada de la cuenta, es decir, resta una determinada cantidad al valor actual del saldo. 
+     * Realiza una retirada de la cuenta, es decir, resta una cantidad al valor actual del saldo. 
      * @param cantidad		Cantidad a retirar de la cuenta.
      * @throws Exception	Si se intenta retirar una cantidad negativa.
      * @throws Exception	Si se intenta retirar una cantidad superior al saldo existente.
